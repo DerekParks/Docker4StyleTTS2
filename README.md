@@ -24,7 +24,7 @@ Follow the [setup instructions from nvidia](https://developer.nvidia.com/blog/gp
 
 And then add the `--gpus all` argument
 
-bash```
+```
 echo "This is awesome text to speech using a gpu" | docker run --gpus all --rm -v ./output:/output -i stylett2
 ```
 
