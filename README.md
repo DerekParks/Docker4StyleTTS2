@@ -5,13 +5,14 @@ This dockerfile packages up the [StyleTTS2 notebook](https://github.com/yl4579/S
 Per upstream liscense you must notify users that the output is AI generated.
 
 ## Building
-bash```
+
+```
 docker build -t stylett2 .
 ```
 
 ## Running
 
-bash```
+```
 mkdir ./output
 echo "This is awesome text to speech" | docker run --rm -v ./output:/output -i stylett2
 ```
