@@ -18,6 +18,6 @@ RUN pip3 install phonemizer
 RUN apt-get -y install sox
 
 ADD tts.py .
-RUN python3 -c "import nltk;nltk.download('punkt')"
+RUN python3 -c "import nltk;nltk.download('punkt_tab')"
 RUN mkdir /output/
 CMD ["python3", "tts.py" ]
